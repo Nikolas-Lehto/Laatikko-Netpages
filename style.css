@@ -52,6 +52,7 @@ h1.copyright {
     margin-left: 5vh;
     font-size: 2vh;
     bottom: 20vh;
+    display: block;
 }
 
 div.Hello{
