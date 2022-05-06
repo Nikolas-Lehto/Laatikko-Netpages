@@ -41,10 +41,17 @@ li a:hover {
     background-color: #777;
   }
 
+div.downstuff {
+    background-color: #888;
+    width: 100%;
+    height: 10vh;
+}
+
 /* Copyright merkintä */
 h1.copyright {
-    margin-left: 1vh;
+    margin-left: 5vh;
     font-size: 2vh;
+    margin-top: 4vh;
 }
 
 div.Hello{
