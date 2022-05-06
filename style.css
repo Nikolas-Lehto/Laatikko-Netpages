@@ -42,14 +42,15 @@ li a:hover {
   }
 
 div.downstuff {
-    background-color: #888;
+    background-color: #8880;
     width: 100%;
     height: 10vh;
+    margin-top: 50%;
 }
 
 /* Copyright merkintä */
-h1.copyright {
-    margin-left: 5vh;
+p.copyright {
+    margin-left: 1vw;
     font-size: 2vh;
 }
 
@@ -68,4 +69,8 @@ h2.Hello{
     h2.Hello, h1.Hello{
         text-align: center
     }
+}
+b{
+    color: #ff167f;
+    text-decoration: none;
 }
