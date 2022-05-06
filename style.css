@@ -60,3 +60,7 @@ h2.Hello{
         text-align: center
     }
 }
+.copyright {
+    margin-left: 1vh;
+    font-zice: 2vh;
+}
