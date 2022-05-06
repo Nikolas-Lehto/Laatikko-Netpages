@@ -42,7 +42,10 @@ li a:hover {
   }
 
 
-
+.copyright {
+    margin-left: 1vh;
+    font-zice: 2vh;
+}
 
 div.Hello{
     margin-left: 10px;
@@ -59,8 +62,4 @@ h2.Hello{
     h2.Hello, h1.Hello{
         text-align: center
     }
-}
-.copyright {
-    margin-left: 1vh;
-    font-zice: 2vh;
 }
