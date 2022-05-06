@@ -41,10 +41,10 @@ li a:hover {
     background-color: #777;
   }
 
-
+/* Copyright merkintä */
 h1.copyright {
     margin-left: 1vh;
-    font-zice: 1vh;
+    font-size: 1vh;
 }
 
 div.Hello{
