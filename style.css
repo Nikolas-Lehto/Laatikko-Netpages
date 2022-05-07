@@ -41,18 +41,7 @@ li a:hover {
     background-color: #777;
   }
 
-div.downstuff {
-    background-color: #8880;
-    width: 100%;
-    height: 10vh;
-    margin-top: 50%;
-}
 
-/* Copyright merkintä */
-p.copyright {
-    margin-left: 1vw;
-    font-size: 2vh;
-}
 
 div.Hello{
     margin-left: 10px;
@@ -73,4 +62,21 @@ h2.Hello{
 b{
     color: #ff167f;
     text-decoration: none;
+}
+div.downstuff {
+    background-color: #8880;
+    width: 100%;
+    height: 10vh;
+    margin-top: 50%;
+}
+
+/* Copyright merkintä */
+p.copyright {
+    margin-left: 1vw;
+    font-size: 2vh;
+}
+p.suslista{
+    color: white;
+    margin-left: 1vw;
+    font-size: 2vh;
 }
