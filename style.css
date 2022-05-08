@@ -80,3 +80,7 @@ p.suslista{
     margin-left: 1vw;
     font-size: 2vh;
 }
+p.suslista a{
+    text-decoration: none;
+    color: white;
+}
