@@ -1,1 +1,99 @@
-
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainos</title>
+    <meta name="theme-color" content="burlywood">
+    <meta name="og:image" content="https://laatikko.netlify.app/images/Logo.png">
+    <meta property="description" content="Laatikon Discord palvelimen mainos. Feel free to copypaste">
+    <link rel="icon" type="image/icon" href="https://laatikko.netlify.app/images/Logo.png">
+</head>
+<style>
+    body {
+        background-color: burlywood;
+    }
+    #area {
+        background-color: #0001;
+        box-shadow: 8px 10px 5px #0007;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10vh;
+        height: 75vh;
+    }
+    h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        margin-top: 20vh;
+        font-size: 25px;
+        font-family: monospace;
+    }
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 18vh;
+        background-color: #0004;
+        border: 2px solid black;
+        border-radius: 7px;
+        font-family: monospace;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    button:hover {
+        color: white;
+        border-color: white;
+    }
+    h2 {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    h3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        margin-top: 7vh;
+        font-size: 18px;
+        font-family: monospace;
+    }
+</style>
+<body>
+    <div id="area">
+        <h2>&copy;Laatikko 2022</h2>
+        <h1>Hhei tässä sinulle Laatikon mainos</h1>
+        <button id="copy">Kopioi leikepöydälle</button>
+        <h3 id="error">Kopioi valmis mainos &uarr;</h3>
+    </div>
+    <er id="mainos">
+        <h1>*Kiinnostaako kokoajan lisää kasvava ja kehittyvä palvelin?* </h1>
+        <h1>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h1>
+        <h1>**Laatikko**</h1>
+        <h1>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h1>
+        <h1>> 👥|Hyvä yhteishenki </h1>
+        <h1>> 🤖|`Karhu`, `Pannukakku`, `Uwu`, `Dank Memer` ja `Pokepallo` botit</h1>
+        <h1>> 🎮|Pelaa pelejä boteilla (kuten `Dank Memer` ja `Poketwo`) </h1>
+        <h1>> 👋|Seuraa ja apua saa ne jotka pyytää :) </h1>
+        <h1>> 🗂️|Yksinkertainen ulkoasu </h1>
+        <h1>> 🔥|Aktiivinen (nykyää jopa oikeestikki :D) </h1>
+        <h1>> 📰| Uutisia oikeasta elämästä, peleistä, servusta ja tietysti urheilusta </h1>
+        <h1>> 🧙‍♂️| Nykyään voit myös selvittää legendaarisen laatikkotehtaan mysteerit, ja päästä lukemaan tarinan.</h1>
+        <h1>> 📈| Jäsenmäärä kasvaa ||(jo 100 jäsentä 🎉)|| ja palvelin kehittyy aina kun on parannettavaa (eli vähintään kerran viikossa)</h1>
+        <h1> > 🌐| Laatikolla on nykyään omat nettisivutkin (kiitti koodari.exe ja ff6171)</h1>
+        <h1> </h1>
+        <h1>*Jos kiinnostuit, tule tsekaamaan* </h1>
+        <h1>tänki mainoksen tehny ff6171 eli kiitokset sille :)</h1>
+        <h1>https://discord.gg/z3Gz2DYHTY</h1>
+        <h1>||(asun laatikos :D)||</h1>
+    </er>
+</body>
+<script>
+    document.getElementById("copy").onclick = function () {
+        navigator.clipboard.writeText(document.getElementById("mainos").innerText);
+        document.getElementById("error").innerHTML = "Mainos kopioitu leikepöydälle";
+ }
+</script>
+</html>
