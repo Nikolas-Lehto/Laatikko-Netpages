@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kysely</title>
+    <link rel="shortcut icon" href="https://laatikko.netlify.app/images/logo.png" type="image/x-icon">
+    <meta name="description" content="Laatikon palautekysely">
+    <meta property="og:image" content="https://laatikko.netlify.app/images/logo.png">
+</head>
+<style>
+    #form {
+        max-width: 100%;
+        max-height: 95vh;
+        width: 500px;
+        background-color: rgb(100, 80, 49);
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+        box-shadow: 7px 7px 25px;
+    }
+    h1 {
+        color: white;
+        font-size: 40px;
+        font-family: monospace;
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .q {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    #send {
+        background-color: #0000;
+        color: white;
+        font-size: 20px;
+        font-family: monospace;
+        border: none;
+        margin-right: 20px;
+        float: right;
+        margin-top: 20px;
+    }
+    #send:hover {
+        color: blue;
+        animation: send 2s infinite;
+        text-decoration: underline;
+    }
+    @keyframes send {
+        0% {margin-right: 20px;}
+        40% {margin-right: 20px;}
+        50% {margin-right: 15px;}
+        60% {margin-right: 20px;}
+        70% {margin-right: 15px;}
+        80% {margin-right: 20px;}
+        100% {margin-right: 20px;}
+    }
+</style>
+<body>
+    <form action="https://sheetdb.io/api/v1/w89akclme8z74" method="POST" id="form">
+        <hr style="color: #0000;">
+        <h1>Kysely</h1>
+        <input type="text" name="data[name]" placeholder="Nimi" id="nimi" class="q">
+        <textarea name="data[message]" placeholder="Miten voisimme parantaa?" id="viesti" class="q"></textarea>
+        <textarea name="data[mp]" placeholder="Mitä mieltä olet palvelimesta?" id="mp" class="q"></textarea>
+        <button type="submit" id="send">Lähetä&#128237;</button>
+    </form>
+</body>
+</html>
+<script>
+    var form = document.getElementById("form");
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(form.action, {
+            method : "post",
+            body: new FormData(document.getElementById("form")),
+        }).then((html) => {
+            alert("Vastaus lähetetty");
+            document.getElementById("nimi").value = null;
+            document.getElementById("viesti").value = null;
+            document.getElementById("form").style.display = "none";
+        });
+    });
+</script>
